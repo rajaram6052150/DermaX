@@ -50,6 +50,24 @@ DermaX can classify skin anomalies such as:
 
 ---
 
+## 🖼️ Screenshots
+
+### 🔐 Login Page
+![Login Page](Screenshots/1.png)
+
+### 🧾 Register Page
+![Register Page](Screenshots/2.png)
+
+### 📊 Dashboard – Before Upload
+![Dashboard – Before Upload](Screenshots/3.png)
+
+### 🧠 Dashboard – After Image Upload & Processing
+![Dashboard – After Upload](Screenshots/4.png)
+
+### 🌟 VLM + LLM-Based Explanation Output
+![Explanation Output](Screenshots/5.png)
+
+
 ## 📁 Project Structure
 
 ```text
