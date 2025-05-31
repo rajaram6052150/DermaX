@@ -78,16 +78,8 @@ export function RegisterForm({ className, ...props }) {
                 <CardTitle className="text-3xl font-bold text-center text-[#27A89C]">
                   Create Account
                 </CardTitle>
-                <p className="text-center text-gray-600">Join DermaX - Advanced Skin Analysis Platform</p>
-              </CardHeader>
+                <p className="text-center text-gray-600">Join DermaX - Advanced Skin Analysis Platform</p>              </CardHeader>
               <form className="space-y-6" onSubmit={handleSubmit}>
-              <div className="flex flex-col items-center text-center">                <h1 className="text-3xl font-bold text-[#27A89C]">
-                  Create an account
-                </h1>
-                <p className="text-gray-600 text-balance mt-2">
-                  Sign up for a new DermaX account
-                </p>
-              </div>
 
               {error && (
                 <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm">

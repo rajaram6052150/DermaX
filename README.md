@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌐 Sky Mappers
 
 **Sky Mappers** is a full-stack geospatial intelligence platform that allows users to upload aerial or satellite imagery and perform **semantic segmentation** to detect key infrastructure and land-use features using AI.
@@ -95,3 +96,6 @@ Sky_Mappers/
 │   └── styles/
 │       └── globals.css
 └── README.md
+=======
+# DermaX
+>>>>>>> 9240b1431cd5c7d515a1bdaec328160380a6c45c
