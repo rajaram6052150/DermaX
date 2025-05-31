@@ -1,0 +1,337 @@
+/* Dashboard medical theme styles */
+.medical-background {
+  background: #E6FAF7;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Large Molecules */
+.molecule-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.molecule-1 {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 140px;
+  height: 140px;
+  opacity: 0.15;
+  transform: rotate(-15deg);
+  animation: float 8s ease-in-out infinite;
+}
+
+.molecule-2 {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 120px;
+  height: 120px;
+  opacity: 0.12;
+  transform: rotate(30deg);
+  animation: float 10s ease-in-out infinite;
+}
+
+.molecule-3 {
+  position: absolute;
+  top: 35%;
+  right: 8%;
+  width: 100px;
+  height: 100px;
+  opacity: 0.1;
+  transform: rotate(-45deg);
+  animation: float 7s ease-in-out infinite;
+}
+
+.molecule-4 {
+  position: absolute;
+  bottom: 30%;
+  right: 20%;
+  width: 90px;
+  height: 90px;
+  opacity: 0.12;
+  transform: rotate(15deg);
+  animation: float 9s ease-in-out infinite;
+}
+
+.molecule-5 {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  opacity: 0.1;
+  transform: rotate(60deg);
+  animation: float 11s ease-in-out infinite;
+}
+
+.molecule-6 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 130px;
+  height: 130px;
+  opacity: 0.13;
+  transform: rotate(-25deg);
+  animation: float 12s ease-in-out infinite;
+}
+
+.molecule-7 {
+  position: absolute;
+  bottom: 15%;
+  right: 40%;
+  width: 115px;
+  height: 115px;
+  opacity: 0.11;
+  transform: rotate(40deg);
+  animation: floatAndSpin 15s ease-in-out infinite;
+}
+
+.molecule-8 {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  width: 95px;
+  height: 95px;
+  opacity: 0.14;
+  transform: rotate(20deg);
+  animation: pulse 8s ease-in-out infinite;
+}
+
+.molecule-9 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 80px;
+  height: 80px;
+  opacity: 0.15;
+  transform: rotate(15deg);
+  animation: floatAndRotate 13s ease-in-out infinite;
+}
+
+.molecule-10 {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.12;
+  transform: rotate(-20deg);
+  animation: floatAndRotate 9s ease-in-out infinite reverse;
+}
+
+.molecule-11 {
+  position: absolute;
+  top: 8%;
+  left: 18%;
+  width: 45px;
+  height: 45px;
+  opacity: 0.1;
+  transform: rotate(30deg);
+  animation: floatAndPulse 11s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--rotation, 0deg));
+  }
+  50% {
+    transform: translateY(-10px) rotate(var(--rotation, 0deg));
+  }
+}
+
+@keyframes floatAndSpin {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(180deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1) rotate(var(--rotation, 0deg));
+    opacity: 0.14;
+  }
+  50% {
+    transform: scale(1.1) rotate(var(--rotation, 0deg));
+    opacity: 0.18;
+  }
+}
+
+@keyframes floatAndRotate {
+  0%, 100% {
+    transform: translate(0, 0) rotate(var(--rotation));
+  }
+  50% {
+    transform: translate(5px, -8px) rotate(calc(var(--rotation) + 45deg));
+  }
+}
+
+@keyframes floatAndPulse {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(var(--rotation));
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(3px, -5px) scale(1.1) rotate(calc(var(--rotation) + 15deg));
+    opacity: 0.15;
+  }
+}
+
+/* Medical Pattern Background */
+.medical-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    /* Large molecules */
+    radial-gradient(circle at 80% 20%, #27A89C 8px, transparent 8px),
+    radial-gradient(circle at 85% 25%, #27A89C 6px, transparent 6px),
+    radial-gradient(circle at 75% 15%, #27A89C 6px, transparent 6px),
+    radial-gradient(circle at 20% 80%, #27A89C 8px, transparent 8px),
+    radial-gradient(circle at 25% 85%, #27A89C 6px, transparent 6px),
+    radial-gradient(circle at 15% 75%, #27A89C 6px, transparent 6px),
+    /* Small scattered molecules */
+    radial-gradient(circle at 40% 30%, #27A89C 3px, transparent 3px),
+    radial-gradient(circle at 60% 70%, #27A89C 3px, transparent 3px),
+    radial-gradient(circle at 70% 40%, #27A89C 3px, transparent 3px),
+    radial-gradient(circle at 30% 60%, #27A89C 3px, transparent 3px);
+  opacity: 0.1;
+}
+
+/* Small plus symbols */
+
+/* Plus Symbol Decorations */
+.plus-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.plus-symbol {
+  position: absolute;
+  font-size: 14px;
+  color: #27A89C;
+  opacity: 0.2;
+  transform: rotate(0deg);
+}
+
+.plus-symbol-1 { top: 15%; right: 25%; }
+.plus-symbol-2 { top: 25%; right: 45%; font-size: 12px; }
+.plus-symbol-3 { top: 10%; left: 35%; font-size: 10px; }
+.plus-symbol-4 { top: 20%; left: 30%; font-size: 12px; }
+
+.dashboard-heading {
+  color: #27A89C;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  letter-spacing: -0.025em;
+}
+
+.upload-section {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.upload-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.image-uploader-container {
+  max-width: 100%;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading animation styles */
+.loading-pulse {
+  position: relative;
+  overflow: hidden;
+  background: #E6FAF7;
+  border-radius: 0.5rem;
+}
+
+.loading-pulse::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, 
+    transparent,
+    rgba(39, 168, 156, 0.2),
+    transparent
+  );
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.feature-select {
+  border: 2px solid #E6FAF7;
+  transition: all 0.2s ease;
+}
+
+.feature-select:hover,
+.feature-select:focus {
+  border-color: #27A89C;
+  box-shadow: 0 0 0 2px rgba(39, 168, 156, 0.1);
+}
+
+.medical-icon {
+  color: #27A89C;
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}
+
+.medical-icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: #E6FAF7;
+  color: #27A89C;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 640px) {
+  .upload-section {
+    padding: 1rem;
+  }
+  
+  .dashboard-heading {
+    font-size: 2rem;
+  }
+}
