@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# 🌐 Sky Mappers
+# 🌐 DermaX – Advanced Skin Analysis Platform
 
-**Sky Mappers** is a full-stack geospatial intelligence platform that allows users to upload aerial or satellite imagery and perform **semantic segmentation** to detect key infrastructure and land-use features using AI.
+**DermaX** is a full-stack medical AI platform that allows users to upload skin disease images and receive predictions using a VGG-based classifier, Grad-CAM visual explanation, and LLM-powered medical reasoning.
 
 ---
 
@@ -9,20 +8,24 @@
 
 - 🔧 **Frontend**: [Next.js](https://nextjs.org/) (React)
 - 🔧 **Backend**: [Django](https://www.djangoproject.com/) (Django REST Framework)
+- 🧠 **ML**: PyTorch (VGG16), Grad-CAM, Gradio Client, Groq API (LLM)
+- 🧪 **Model Types**: Classification, XAI (Explainable AI)
 
 ---
 
 ## 🧠 What It Can Detect
 
-Sky Mappers can segment:
+DermaX can classify skin anomalies such as:
 
-- 🏢 **Buildings**
-- 🛣️ **Roads**
-- 🌊 **Water Bodies**
-- 🏡 **Rooftop Types**:
-  - RCC (Reinforced Cement Concrete)
-  - Tiled Roofs
-  - Asbestos Sheets
+- Actinic keratosis
+- Atopic Dermatitis
+- Benign keratosis
+- Dermatofibroma
+- Melanocytic nevus
+- Melanoma
+- Squamous cell carcinoma
+- Tinea/Ringworm/Candidiasis
+- Vascular lesions
 
 ---
 
@@ -31,53 +34,34 @@ Sky Mappers can segment:
 - 🧾 **User Registration** (`/register`)
 - 🔐 **Login** (`/`)
 - 📊 **Protected Dashboard** (`/dashboard`)
-- 🔓 **JWT-based authentication**
-- ✅ Secure access to upload and processing features
+- 🔓 **Token-based authentication**
+- ✅ Secure routes and access control
 
 ---
 
 ## 📦 Key Features
 
-- 📤 Upload drone/satellite images
-- 🎯 Choose target feature to segment
-- 🧠 Server-side AI performs semantic segmentation
-- 🖼️ Real-time result display
-- 🔄 REST API integration (Next.js ↔ Django)
-- 🛡️ Protected routes with token verification
-
----
-
-## 🖼️ Screenshots
-
-### 🔐 Login Page
-![Login Page](1.png)
-
-### 🧾 Register Page
-![Register Page](2.png)
-
-### 📊 Dashboard – Before Upload
-![Dashboard Before Upload](3.png)
-
-### 🧠 Dashboard – After Image is Uploaded and Processed
-![Dashboard After Upload](4.png)
-
-### 🌍 Sample Input (Aerial Image)
-![Input Image](building_img_81.jpg)
+- 📤 Upload skin image for diagnosis
+- 🎯 AI model performs classification
+- 🔥 Grad-CAM heatmap visualization
+- 🧠 VLM + LLM generate user-friendly medical explanations
+- 🔄 Fullstack integration (Next.js ↔ Django ↔ PyTorch ↔ Groq)
+- 🛡️ Protected routes with JWT/token verification
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-Sky_Mappers/
+DermaX/
 ├── Backend/
 │   ├── manage.py
 │   ├── requirements.txt
-│   └── sky_mappers/
-│       ├── settings.py         # CORS, DRF, auth setup
+│   └── Sky_Mappers/
+│       ├── settings.py         # DRF, auth, AI model paths
 │       ├── urls.py
-│       ├── api/                # Segmentation logic
-│       └── users/              # Login & registration
+│       ├── api/                # Inference logic
+│       └── accounts/           # Auth logic
 ├── terraview/
 │   ├── package.json
 │   ├── public/
@@ -95,7 +79,7 @@ Sky_Mappers/
 │   │       └── imageUploader.jsx
 │   └── styles/
 │       └── globals.css
+├── Sample_Images/
+│   ├── input/                  # Example input images
+│   └── output/                 # Grad-CAM output
 └── README.md
-=======
-# DermaX
->>>>>>> 9240b1431cd5c7d515a1bdaec328160380a6c45c
